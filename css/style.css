@@ -1,4 +1,51 @@
+@import url(https://fonts.googleapis.com/css?family=Open+Sans);
+main {
+  width: 100%;
+  max-width: 100%;
+  margin: 0;
+  padding: 0;
+  font-family: 'Open Sans', sans-serif;
+  background: #E0DFD7;
+  color: #5B5A60;
+}
+
+
+/* Typography */
+
+h1 {
+  text-transform: uppercase;
+  letter-spacing: -0.125em;
+}
+
+h2 {
+  text-transform: uppercase;
+  font-weight: 500;
+}
+
+h3 {
+  letter-spacing: -0.03125em;
+}
+
+p {
+  letter-spacing: -0.0125em;
+}
+
+
 /* Navigation */
+
+#mobileMenu {
+  display: none;
+}
+
+#alexloomer {
+  font-weight: bold;
+  font-size: 1.875em;
+  float: left;
+  padding: 10px 0 23px 20px;
+  text-transform: uppercase;
+  letter-spacing: -0.04em;
+  color: #E0DFD7;
+}
 
 nav {
   width: 100%;
@@ -6,20 +53,21 @@ nav {
   background-color: #2D2D2D;
   position: fixed;
   top: 0;
+  left: 0;
+  border-bottom: .1em solid white;
 }
 
 nav a {
-  font-family: font-family: 'Oxygen', sans-serif;
-  font-size: 12px;
+  font-size: 0.750em;
   text-transform: uppercase;
   color: #E0DFD7;
   text-decoration: none;
-  letter-spacing: 3px;
-  padding-top: 23px;
-  padding-bottom: 23px;
-  margin: 1px;
-  padding-right: 5px;
-  padding-left: 5px;
+  letter-spacing: 0.3em;
+  padding-top: 25px;
+  padding-bottom: 19px;
+  margin: 10%;
+  padding-right: 5%;
+  padding-left: 5%;
 }
 
 nav a:hover {
@@ -39,101 +87,194 @@ nav ul {
 nav li {
   float: right;
   padding-top: 20px;
-  padding-right: 25px;
+  padding-right: 2%;
   display: inline-block;
 }
 
 
-/* Name on Nav Bar */
+/* Layout  */
 
-#alexloomer {
-  float: left;
-  padding-left: 25px;
-  text-transform: uppercase;
-  font-size: 25px;
-  padding-top: 15px;
-  color: #E0DFD7;
-  letter-spacing: -1px;
-  position: fixed;
+header#front {
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
 }
 
-
-/* Global */
-
-
-/* Homepage/Bio */
-
-body {
-  background: #E0DFD7;
-  color: #5B5A60;
-}
-
-img {
-  width: 300px;
-  height: 300px;
-  border-radius: 150px;
-  -webkit-border-radius: 250px;
-  padding: 3em;
-  margin-left: auto;
-  margin-right: auto;
+header img {
+  position: absolute;
+  top: 0;
+  left: 0;
   display: block;
+  width: 100%;
+  min-height: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+#about {
+  width: 55%;
+  float: right;
+  padding: 8% 5% 0 0;
+  display: block;
+  margin-top: 5%;
+  text-align: center;
 }
 
 #bio {
-  height: 650px;
-  background: #E0DFD7;
-  margin: 0 auto;
-  line-height: 28px;
-  text-align: justify;
-  margin-top: 50px;
-  border-bottom: 1px solid #2D2D2D
+  width: 55%;
+  float: right;
+  padding: 0 5% 0 0;
+  display: block;
+  margin: 0 0 12% 2%;
 }
 
-#bio h2 {
+#alex img {
+  float: left;
+  width: 25%;
+  border-radius: 50%;
+  display: block;
+  margin: 5% 1% 2% 10%;
+}
+
+
+/* Clearfix */
+
+  #skillset {
+    clear: both;
+    width: 100%;
+    float: left;
+    display: block;
+    margin: 0 10% 5% 10%;
+  }
+
+#skillset h2 {
+  text-align: left;
+}
+
+#skillset p {
+  text-align: left;
+}
+
+#skillset ul {
+  padding: 0 45%;
+}
+
+#resume {
   text-align: center;
-  border-style: solid;
-  border-width: medium;
-  padding: 5px;
+  width: 50%;
+  clear: both;
+  padding: 5%;
   margin: 0 auto;
-  max-width: 70px;
 }
 
-#biography {
-  max-width: 660px;
+#portfolio {
+  text-align: center;
+  width: 50%;
+  padding: 5%;
   margin: 0 auto;
-  line-height: 28px;
-  text-align: justify;
-  margin-top: 50px;
 }
-
-
-/* Typography */
-
-h1 {
-  font-family: 'Open Sans', sans-serif;
-  font-size: 32px;
-  font-style: normal;
-  font-variant: normal;
-  font-weight: 400;
-  line-height: 26.4px;
-}
-
-h2 {
-  font-family: Arial;
-  font-size: 24px;
-  font-style: normal;
-  font-variant: normal;
-  font-weight: 400;
-  line-height: 26.4px;
-}
-
-
-/* Resume */
-
-
-/* Footer */
 
 #footer {
-  letter-spacing: .5px;
   text-align: center;
+  width: 50%;
+  padding-top: 5%;
+  margin: 0 auto;
 }
+
+/* Media Queries */
+
+
+/* Mobile */
+
+@media screen and (min-width: 320px) {}
+
+
+/* Pha-Blet */
+
+@media screen and (min-width: 480px) {}
+
+
+/* Tablet */
+
+@media screen and (max-width: 768px) {
+  #alex img {
+    float: none;
+    width: 50%;
+    padding: 5%;
+    img-align: center;
+    display: block;
+    margin: 0 auto;
+    padding: none;
+  }
+  #bio {
+    width: 80%;
+    float: none;
+    padding: 0 0 2% 0;
+    display: block;
+    padding: none;
+    margin: 0 10% 20% 10%;
+    text-align: initial;
+    text-align: center;
+  }
+  #about {
+    width: 50%;
+    float: none;
+    padding-top: 8%;
+    display: block;
+    margin: 25% 25% 0 25%;
+  }
+  .large-nav {
+    display: none;
+  }
+  #mobileMenu {
+    color: #E0DFD7;
+    display: block;
+    font-style: ;
+    float: right;
+    text-align: center;
+    font-size: 2.777em;
+    padding: 0 20px 10px 25px;
+  }
+  #alexloomer {
+    font-weight: bold;
+    letter-spacing: -0.03125em;
+    font-size: 1.433em;
+    float: left;
+    padding: 20px 0 23px 20px;
+    text-transform: uppercase;
+    letter-spacing: -0.09em;
+    color: #E0DFD7;
+  }
+  nav {
+    width: 100%;
+    height: 70px;
+    background-color: #2D2D2D;
+    position: fixed;
+    top: 0;
+    left: 0;
+    border-bottom: .1em solid white;
+  }
+  #skillset {
+    width: 50%;
+    text-align: center;
+    float: none;
+    padding-top: 8%;
+    display: block;
+    margin: 0 auto;
+  }
+  #skillset h2 {
+    text-align: center;
+  }
+}
+
+
+/* Desktop */
+
+@media screen and (min-width: 1000px) {}
+
+
+/* Large Screens */
+
+@media screen and (min-width: 2000px) {}
