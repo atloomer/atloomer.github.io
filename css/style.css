@@ -63,11 +63,8 @@ nav a {
   color: #E0DFD7;
   text-decoration: none;
   letter-spacing: 0.3em;
-  padding-top: 25px;
-  padding-bottom: 19px;
+  padding: 25px 5% 19px 5%;
   margin: 10%;
-  padding-right: 5%;
-  padding-left: 5%;
 }
 
 nav a:hover {
@@ -113,75 +110,115 @@ header img {
   object-fit: cover;
 }
 
-#about {
-  width: 55%;
-  float: right;
-  padding: 8% 5% 0 0;
+
+/* Bio/Resume */
+
+/* Top section of resume/bio */
+#top-section {
+  width: 100%;
   display: block;
-  margin-top: 5%;
+  background: #2D2D2D;
+  padding-bottom: 1%;
   text-align: center;
+  color: #E0DFD7;
 }
 
-#bio {
-  width: 55%;
-  float: right;
-  padding: 0 5% 0 0;
+#top-section h1 {
+  display: inline-block;
+  letter-spacing: .35em;
+  margin-top: 3%;
+  padding: 1.5%;
+  border: .15em solid;
+  font-weight: normal;
+}
+
+#top-section h2 {
   display: block;
-  margin: 0 0 12% 2%;
-}
-
-#alex img {
-  float: left;
-  width: 25%;
-  border-radius: 50%;
-  display: block;
-  margin: 5% 1% 2% 10%;
-}
-
-
-/* Clearfix */
-
-  #skillset {
-    clear: both;
-    width: 100%;
-    float: left;
-    display: block;
-    margin: 0 10% 5% 10%;
-  }
-
-#skillset h2 {
-  text-align: left;
-}
-
-#skillset p {
-  text-align: left;
-}
-
-#skillset ul {
-  padding: 0 45%;
-}
-
-#resume {
-  text-align: center;
-  width: 50%;
-  clear: both;
-  padding: 5%;
   margin: 0 auto;
+  font-size: 1em;
+  letter-spacing: .4em;
 }
+
+#top-section p {
+  display: block;
+  margin-bottom: 3.5%;
+}
+
+/* left section of resume/bio */
+#left-section {
+  float: left;
+  display: inline-block;
+  background: #CFDBC5;
+  width: 25%;
+  height: 700px;
+  padding: 5em 3.5em 5em 0;
+  text-align: right;
+}
+
+#left-section h3 {
+  font-size: 1.5em;
+  letter-spacing: .3em;
+}
+
+#left-section ul {
+  list-style-type: none;
+}
+
+#left-section li {
+  padding-bottom: 1.5em;
+}
+
+.italic {
+  font-style: italic;
+}
+
+
+
+/* right section of resume/bio */
+#right-section {
+  float: right;
+  display: inline-block;
+  width: 55%;
+  height: 700px;
+  padding: 5em;
+}
+
+#right-section h3 {
+  font-size: 1.5em;
+  letter-spacing: .3em;
+  clear: both;
+}
+
+#right-section h4 {
+  font-size: 1em;
+  text-transform: uppercase;
+  letter-spacing: .3em;
+}
+
+#right-section p {
+  margin-right: 2em;
+}
+
+
+
+/* Portfolio */
 
 #portfolio {
+  clear: both;
   text-align: center;
-  width: 50%;
-  padding: 5%;
-  margin: 0 auto;
+  width: 100%;
+  padding: 4% 0;
+  background: whitesmoke;
 }
 
 #footer {
+  clear: both;
   text-align: center;
   width: 50%;
   padding-top: 5%;
   margin: 0 auto;
 }
+
 
 /* Media Queries */
 
@@ -199,32 +236,6 @@ header img {
 /* Tablet */
 
 @media screen and (max-width: 768px) {
-  #alex img {
-    float: none;
-    width: 50%;
-    padding: 5%;
-    img-align: center;
-    display: block;
-    margin: 0 auto;
-    padding: none;
-  }
-  #bio {
-    width: 80%;
-    float: none;
-    padding: 0 0 2% 0;
-    display: block;
-    padding: none;
-    margin: 0 10% 20% 10%;
-    text-align: initial;
-    text-align: center;
-  }
-  #about {
-    width: 50%;
-    float: none;
-    padding-top: 8%;
-    display: block;
-    margin: 25% 25% 0 25%;
-  }
   .large-nav {
     display: none;
   }
@@ -255,17 +266,6 @@ header img {
     top: 0;
     left: 0;
     border-bottom: .1em solid white;
-  }
-  #skillset {
-    width: 50%;
-    text-align: center;
-    float: none;
-    padding-top: 8%;
-    display: block;
-    margin: 0 auto;
-  }
-  #skillset h2 {
-    text-align: center;
   }
 }
 
