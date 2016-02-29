@@ -152,7 +152,7 @@ nav li {
   font-size: .5em;
 }
 
-/* right section is going to come first */
+/* bio portion */
 #right-section {
   width: 100%;
   margin: 0;
@@ -180,7 +180,7 @@ nav li {
   margin: 0 4%;
 }
 
-/* left section is going to come last */
+/* Skills section */
 #skills-mobile {
   float: left;
   width: 50%;
@@ -283,8 +283,8 @@ nav li {
   display: none;
 }
 
-/* Portfolio */
 
+/* Portfolio */
 #portfolio {
   width: 100%;
   display: block;
@@ -306,6 +306,77 @@ nav li {
   font-weight: normal;
 }
 
+
+/* Contact form with FormSpree.io */
+form {
+  width: 80%;
+  background: #2D2D2D;
+  margin: 0 auto;
+  color: #E0DFD7;
+  border-radius: 8px;
+  padding-bottom: 3%;
+}
+
+form h1 {
+  margin: 2em 0;
+  padding-top: 5%;
+  text-align: center;
+  letter-spacing: .05em;
+  font-weight: lighter;
+  font-size: 1em;
+}
+
+label,
+input,
+textarea {
+  display: block;
+  margin: 0 auto;
+  text-align: center;
+  font-size: .9em;
+}
+
+label,
+input {
+  border-radius: 8px;
+  border: none;
+}
+
+input[type=submit] {
+  margin-top: 5%;
+  margin-bottom: 5%;
+  background: #464242;
+}
+
+input[type=submit]:hover {
+  background: gray;
+}
+
+textarea {
+  width: 80%;
+  height: 100px;
+}
+
+label {
+  padding-bottom: 1%;
+  margin-top: 5%;
+}
+
+input,
+textarea {
+  text-align: left;
+  background: #505050;
+}
+
+textarea {
+  border: none;
+}
+
+:focus {
+  outline-color: #E0DFD7;
+}
+
+
+/* Footer */
 #footer {
   clear: both;
   text-align: center;
@@ -329,6 +400,7 @@ nav li {
   #levels li {
   padding: 1.4% 0;
 }
+  
 }
 
 
@@ -652,7 +724,7 @@ nav li {
   background: #CFDBC5;
   width: 25%;
   height: 800px;
-  padding: 6% 5% 10% 1.5%;
+  padding: 6% 5% 15% 1.5%;
   text-align: right;
 }
 
@@ -764,6 +836,41 @@ padding: .7em;
   font-weight: normal;
 }
   
+/*  Desktop Form  */
+  form {
+    border-radius: 15px;
+    width: 60%;
+  }
+  
+  form h1 {
+    font-size: 1.7em;
+  }
+  
+  #contact-left {
+    height: 9em;
+    width: 40%;
+    float: left;
+    padding-top: 1em;
+    padding-bottom: 8%;
+    font-size: 1.1em;
+  }
+  
+  #contact-right {
+    padding-bottom: 8%;
+    height: 10em;
+    width: 60%;
+    float: right;
+    font-size: 1.1em;
+  }
+  
+  input[type=submit] {
+    font-size: 1.1em;
+    clear: both;
+  }
+  
+  #contact-right textarea {
+    border-radius: 8px;
+  }
 }
 
 
@@ -874,7 +981,7 @@ nav li {
   background: #CFDBC5;
   width: 25%;
   height: 800px;
-  padding: 6% 5% 0 1.5%;
+  padding: 6% 5% 5% 1.5%;
   text-align: right;
 }
 
@@ -986,3 +1093,12 @@ padding: .7em;
   font-weight: normal;
 }
 }
+
+/* Larger Screen sizes */
+@media screen and (min-width: 2000px){
+  
+  div#left-section {
+    padding: 6% 5% 5% 1.5%;
+  }
+}
+  
