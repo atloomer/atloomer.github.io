@@ -11,10 +11,7 @@ main {
 
 
 /* Front Page Image Layout  */
-
-
 /* Image stretches to vh */
-
 header#front {
   position: relative;
   overflow: hidden;
@@ -35,8 +32,7 @@ header img {
 }
 
 
-/* Typography */
-
+/* Main Typography */
 h1 {
   text-transform: uppercase;
   letter-spacing: -0.125em;
@@ -56,8 +52,7 @@ p {
 }
 
 
-/* Navigation */
-
+/* Navigation beginning w/ mobile */
 .large-nav {
   display: none;
 }
@@ -115,7 +110,8 @@ nav li {
 }
 
 
-/* Checkbox Hack - Dropdown Nav */
+/* Checkbox - Dropdown Nav */
+/* Life Hacks!! */
 #nav-input {
   display: none;
 }
@@ -169,11 +165,9 @@ label[for="nav-input"] {
     z-index: 9;
   }
 
+
 /* Bio/Resume Mobile First */
-
-
 /* top section of resume/bio */
-
 #top-section {
   width: 100%;
   display: block;
@@ -208,7 +202,6 @@ label[for="nav-input"] {
 
 
 /* bio portion */
-
 #right-section {
   width: 100%;
   margin: 0;
@@ -216,6 +209,10 @@ label[for="nav-input"] {
   padding-top: 5%;
   text-align: center;
   background: #CFDBC5;
+}
+
+#right-section p {
+  padding-bottom: 10%;
 }
 
 #right-section h3 {
@@ -238,7 +235,6 @@ label[for="nav-input"] {
 
 
 /* Skills section */
-
 #skills-mobile {
   float: left;
   width: 50%;
@@ -261,7 +257,6 @@ label[for="nav-input"] {
 
 
 /* Skill Bars */
-
 #levels {
   text-align: left;
   float: right;
@@ -341,7 +336,6 @@ label[for="nav-input"] {
 
 
 /* Portfolio */
-
 #portfolio {
   width: 100%;
   display: block;
@@ -365,7 +359,6 @@ label[for="nav-input"] {
 
 
 /* Contact form with FormSpree.io */
-
 form {
   width: 80%;
   background: #2D2D2D;
@@ -435,7 +428,6 @@ textarea {
 
 
 /* Footer */
-
 #footer {
   clear: both;
   text-align: center;
@@ -446,10 +438,7 @@ textarea {
 
 
 /* Media Queries */
-
-
 /* Mobile */
-
 @media screen and (min-width: 330) {
   #levels li {
     padding: 2% 0;
@@ -460,12 +449,10 @@ textarea {
   #levels li {
     padding: 1.4% 0;
   }
-  /* Contact form */
 }
 
 
 /* Tablet */
-
 @media screen and (min-width: 768px) {
   /*  navigation  */
   #mobileMenu {
@@ -518,6 +505,7 @@ textarea {
     padding-right: 2%;
     display: inline-block;
   }
+  
   /* Bio/Resume */
   /* Top section of resume/bio */
   #top-section {
@@ -548,6 +536,7 @@ textarea {
     margin-bottom: 3.5%;
     font-size: .5em;
   }
+  
   /* left section of resume/bio */
   #left-section {
     float: left;
@@ -571,6 +560,7 @@ textarea {
   .italic {
     font-style: italic;
   }
+  
   /* right section of resume/bio */
   #right-section {
     float: right;
@@ -603,6 +593,7 @@ textarea {
   #right-section li {
     padding: 0;
   }
+  
   /* content not displayed */
   #mobileContainer {
     display: none;
@@ -622,6 +613,7 @@ textarea {
   #experience {
     display: block;
   }
+  
   /* Portfolio */
   #portfolio {
     width: 100%;
@@ -647,7 +639,6 @@ textarea {
 
 
 /* Tablet shift */
-
 @media screen and (min-width: 768px) {
   #mobileMenu {
     display: none;
@@ -699,6 +690,7 @@ textarea {
     padding-right: 2%;
     display: inline-block;
   }
+  
   /* Bio/Resume */
   /* Top section of resume/bio */
   #top-section {
@@ -729,6 +721,7 @@ textarea {
     margin-bottom: 3.5%;
     font-size: .5em;
   }
+  
   /* left section of resume/bio */
   #left-section {
     float: left;
@@ -752,6 +745,7 @@ textarea {
   .italic {
     font-style: italic;
   }
+  
   /* right section of resume/bio */
   #right-section {
     float: right;
@@ -785,6 +779,7 @@ textarea {
   #right-section li {
     padding: 0;
   }
+  
   /* content not displayed */
   #mobileContainer {
     display: none;
@@ -804,6 +799,7 @@ textarea {
   #experience {
     display: block;
   }
+  
   /* Portfolio */
   #portfolio {
     width: 100%;
@@ -825,6 +821,7 @@ textarea {
     border: .15em solid;
     font-weight: normal;
   }
+  
   /*  Tablet Form  */
   form {
     border-radius: 15px;
@@ -859,7 +856,6 @@ textarea {
 
 
 /* Desktop */
-
 @media screen and (min-width: 1000px) {
   /*  navigation  */
   #mobileMenu {
@@ -912,6 +908,7 @@ textarea {
     padding-right: 2%;
     display: inline-block;
   }
+  
   /* Bio/Resume */
   /* Top section of resume/bio */
   #top-section {
@@ -942,6 +939,7 @@ textarea {
     margin-bottom: 3.5%;
     font-size: .5em;
   }
+  
   /* left section of resume/bio */
   #left-section {
     float: left;
@@ -965,6 +963,7 @@ textarea {
   .italic {
     font-style: italic;
   }
+  
   /* right section of resume/bio */
   #right-section {
     float: right;
@@ -998,6 +997,7 @@ textarea {
   #right-section li {
     padding: 0;
   }
+  
   /* content not displayed */
   #mobileContainer {
     display: none;
@@ -1017,6 +1017,7 @@ textarea {
   #experience {
     display: block;
   }
+  
   /* Portfolio */
   #portfolio {
     width: 100%;
@@ -1074,7 +1075,6 @@ textarea {
 
 
 /* Larger Screen sizes */
-
 @media screen and (min-width: 2000px) {
   div#left-section {
     padding: 6% 5% 5% 1.5%;
