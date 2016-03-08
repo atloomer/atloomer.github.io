@@ -808,6 +808,7 @@ textarea {
     clear: both;
     text-align: center;
     width: 100%;
+    cursor: pointer;
   }
   #portfolio h2 {
     display: inline-block;
@@ -817,7 +818,14 @@ textarea {
     padding: 1.5%;
     border: .15em solid;
     font-weight: normal;
+    transition: all 1s;
   }
+  #portfolio:hover h2 {
+  padding: 1.5% 10%;
+  color: #5B5A60;
+  border-top: .15em solid #2D2D2D;
+  border-bottom: .15em solid #2D2D2D;
+}
   
   /*  Tablet Form  */
   form {
