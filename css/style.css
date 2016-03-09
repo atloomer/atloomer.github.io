@@ -572,10 +572,73 @@ textarea {
   }
   #left-section ul {
     list-style-type: none;
+    padding-left: 0;
   }
   #left-section li {
+    font-size: .9em;
+    letter-spacing: .2em;
+    text-transform: uppercase;
+    list-style-type: none;
     padding: .7em;
+    text-align: left;
   }
+  
+  #left-section ul li {
+    padding: 1em 0.9em 0 0.9em;
+  }
+/*  Skill Area to Fill  */
+  div.box {
+  height: .7em;
+  width: 96%;
+  border: .1em solid #2D2D2D;
+  border-radius: 3px;
+  display: inline-block;
+  text-align: center;
+  }
+  
+/* Skill Levels */
+  #one {
+  height: .7em;
+  width: 60%;
+  background: #2D2D2D;
+  display: block;
+}
+
+#two {
+  height: .7em;
+  width: 90%;
+  background: #2D2D2D;
+  display: block;
+}
+
+#three {
+  height: .7em;
+  width: 50%;
+  background: #2D2D2D;
+  display: block;
+}
+
+#four {
+  height: .7em;
+  width: 90%;
+  background: #2D2D2D;
+  display: block;
+}
+
+#five {
+  height: .7em;
+  width: 92%;
+  background: #2D2D2D;
+  display: block;
+}
+
+#six {
+  height: .7em;
+  width: 85%;
+  background: #2D2D2D;
+  display: block;
+}
+  
   .italic {
     font-style: italic;
   }
